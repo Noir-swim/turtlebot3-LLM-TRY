@@ -40,5 +40,7 @@ python codegen_turtlebot3.py
 Enter movement description (or 'run' to execute last):
 「前に進んでから右に曲がる」
 
-## クレジット
+---
+
+## 📕クレジット
 - [RobotecAI/rai](https://github.com/RobotecAI/rai) を参照して実装を拡張。
