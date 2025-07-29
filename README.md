@@ -1,4 +1,4 @@
-# 🚀 TurtleBot3 + LLM Demo
+# 🚀 TurtleBot3をLLMで動かしてみる
 
 ## 📝 概要
 TurtleBot3 を **ROS 2 + Gazebo** 上のシミュレーション環境で動作させ、  
