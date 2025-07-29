@@ -36,6 +36,26 @@ TurtleBot3 を **ROS 2 + Gazebo** シミュレーション環境で動作させ�
 - **ROS 2 + Gazebo** によるシミュレーション
 - コード生成 → 即時実行 のフローを実現
 
+
+### 🔹 プロンプト例
+Output only one Python code block.
+Define exactly one top-level function with the signature:
+def move_custom(self):
+Inside that function, implement:
+	1.	Move forward (linear=0.5, angular=0, duration=1.5)
+	2.	Rotate right on the spot (linear=0, angular=-1.5, duration=1.0)
+	3.	Move forward again (linear=0.5, angular=0, duration=1.5)
+	4.	Stop (linear=0, angular=0, duration=0)
+Do not output explanations or any text outside the code block.
+---
+### 🔹 予想される出力例（LLM生成コード）
+```python
+def move_custom(self):
+    self.send_cmd(0.5, 0, 1.5)
+    self.send_cmd(0, -1.5, 1.0)
+    self.send_cmd(0.5, 0, 1.5)
+    self.send_cmd(0, 0, 0)
+
 ---
 
 ##  クレジット
